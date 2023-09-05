@@ -27,18 +27,16 @@
         ":type": "image",
         ":name": "imgcover"
       },
-      "galeria": {
-        ":type": "array",
-        ":name": "galeria",
-        ":items": {
-          "image": {
-            ":type": "image"
-          }
+       "galeria": {
+      ":name": "Galería",
+      ":items": {
+        "image": {
+          ":type": "image"
         }
-      },
+      }
+    },
       "categories": {
-        ":type": "array",
-        ":name": "categories",
+        ":name": "Categories",
         ":items": {
           "category": {
             ":type": "line"
