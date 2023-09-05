@@ -1,0 +1,51 @@
+{
+  ":name": "CMS smosgasbord",
+  "portfolio": {
+    "title": {
+      ":type": "line"
+    },
+    ":items": {
+      "id": {
+        ":type": "line"
+      },
+      "tituloProyecto": {
+        ":type": "line"
+      },
+      "year": {
+        ":type": "line",
+        ":name": "year"
+      },
+      "link": {
+        ":type": "line",
+        ":name": "link"
+      },
+      "description": {
+        ":type": "line",
+        ":name": "description"
+      },
+      "imgcover": {
+        ":type": "image",
+        ":name": "imgcover"
+      },
+      "galeria": {
+        ":type": "array",
+        ":name": "galeria",
+        ":items": {
+          "image": {
+            ":type": "image"
+          }
+        }
+      },
+      "categories": {
+        ":type": "array",
+        ":name": "categories",
+        ":items": {
+          "category": {
+            ":type": "line"
+          }
+        }
+      }
+    },
+    ":name": "projects"
+  }
+}

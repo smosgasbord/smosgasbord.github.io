@@ -1,0 +1,49 @@
+---
+import "../styles/locomotive.css";
+
+
+---
+<div class="rounded-md hero min-h-screen z-10 ">
+
+  <div class="hero-content m-6 lg:m-10 ">
+  <mainTitle class="title-font text-5xl lg:text-7xl" data-scroll data-scroll-speed="-0.2">Let's transform your visions into digital reality</mainTitle>
+    <!--div class="max-w-md backdrop-blur-sm bg-white/10 rounded-md shadow">
+      
+      <p class="py-6 text-white">Multidisciplinary Artist and Web Developer working on Immersive, Creative code and XR Experiences for Public Institutions, Social Organizations & Art Collectives</p>
+      
+    </div-->
+  </div>
+</div>
+<div id="categories" class="m-10 -translate-y-10 text-white text-4xl"></div>
+<section class="m-5 bg-base-200 p-7 rounded-box pb-7">
+<div class="uppercase text-3xl lg:text-5xl   text-right">Services</div>
+<ul class="ml-5 text-primary">
+<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl  " data-scroll data-scroll-speed="-0.01"  data-scroll-direction="vertical"  data-scroll-delay="0.06" >Front-end Web Development</li>
+<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl  " data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal">Hosting Migration</li>
+<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl  "data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal">Website Administration </li>
+<li class="list-disc	uppercase  hover:text-primary-focus text-3xl lg:text-5xl " data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal">SEO and Website Optimization</li>
+</ul>
+</section>
+<!--marquee direction="left" class="text-white text-9xl -translate-y-10"></marquee-->
+<!--marquee direction="right" class="text-white text-9xl ">Immersive Web Experiencies</marquee>
+<marquee direction="left" class="text-white text-9xl ">Creative coding</marquee>
+<marquee direction="right" class="text-white text-9xl ">Virtual and Augmented Reality</marquee-->
+
+<script is:inline src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    new TypeIt("#categories", {
+      strings: ["Hi, I'm Randall Sáenz aka smosgasbord", "a front-end web developer and new media artist crafting generative and interactive web experiences", "using 3D, WebGL, Machine Learning, and Extended Reality tools."],
+    }).go();
+  });
+</script>
+<script client:only>
+/*init locomotive*/
+(function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
+  
+</script>
+

@@ -1,0 +1,21 @@
+---
+import "../global.css"
+import { ViewTransitions } from 'astro:transitions';
+const {title,bg} = Astro.props;
+
+---
+
+<html lang="en" class={bg} data-theme="acid">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <!--ViewTransitions /-->
+  </head>
+  <body  >
+  
+    <slot />
+  
+  </body>
+ 
+</html>

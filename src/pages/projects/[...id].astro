@@ -1,0 +1,117 @@
+---
+  import data from "../../content/data.json"
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Navbar from '../../components/Navbar.astro'
+import Footer from '../../components/Footer.astro'
+import "../../styles/global.css" 
+
+var projects = data.projects;
+
+export async function getStaticPaths() {
+
+var projects = data.projects;
+  return projects.map(({ id, imgcover, tituloProyecto,year, description, link, img1,img2,img3,img4 }) => {
+  
+    return {
+      params: { id },
+      props: { id, imgcover, tituloProyecto,year, description, link, img1,img2,img3,img4}
+    };
+  });
+}
+
+const { id  } = Astro.params;
+const {  tituloProyecto, imgcover,year, description, link, img1,img2,img3,img4 } = Astro.props;
+
+
+
+---
+
+<BaseLayout title={tituloProyecto} bg="bg-base-200">
+<Navbar/>
+<section  class="grid place-content-center  text-center rounded-box">
+<div id="carousel" class="h-96  carousel carousel-vertical rounded-box overflow-x-hidden">
+  <div class="carousel-item group lg:h-full h-1/2">
+        <img src={img1} class="object-fill rounded-lg m-2">
+        <p class="absolute p-2 translate-y-96 group-hover:hidden">Scroll Down or Drag </p>
+  </div>
+  <div class="carousel-item lg:h-full h-1/2">
+        <img src={img2} class="object-fill rounded-lg m-2">
+  </div>
+  <div class="carousel-item lg:h-full h-1/2">
+       <img src={img3} class="object-fill rounded-lg m-2">
+  </div>
+   <div class="carousel-item lg:h-full h-1/2">
+       <img src={img4} class="object-fill rounded-lg m-2">
+  </div>
+  </div>
+  
+
+
+<div class="grid place-content-center text-center absolute bottom-0 rounded-lg p-5 ">
+<div class=" title-font text-2xl text-neutral uppercase">{tituloProyecto}</div>
+<div class="text-left  text-lg lg:ml-12 lg:mr-12 lg:mt-4 m-4 lg:mb-0 text-neutral">{description}</div>
+<a class="btn m-5 w-11/12 bg-accent hover:bg-secondary text-neutral" target="_blank" href={link}>Check it out</a>
+</div>
+
+</section>
+
+
+
+
+<!--div class="relative bg-base-200 lg:bg-accent p-3 rounded-lg">
+    <div class="lg:sticky top-0 lg:h-screen flex flex-col items-center justify-center  backdrop-blur-sm">
+        <img src={img1} class="w-11/12 rounded-lg m-5">
+        <p class="hidden hover:flex">Scroll Down</p>
+    </div>
+    <div class="lg:sticky top-0 lg:h-screen flex flex-col items-center justify-center  backdrop-blur-sm">
+        <img src={img2} class="w-11/12 rounded-lg m-5">
+        
+    </div>
+    <div class="lg:sticky top-0 lg:h-screen flex flex-col items-center justify-center  backdrop-blur-sm">
+        <img src={img3} class="w-11/12 rounded-lg m-5">
+      
+    </div>
+    <div class="lg: sticky top-0 lg:h-screen flex flex-col items-center justify-center backdrop-blur-sm ">
+        <img src={img4} class="w-11/12 rounded-lg m-5">
+    </div>
+</div-->
+
+<script is:inline>
+
+const parent = document.querySelector(".carousel");
+
+let startX;
+let scrollTop;
+let isDown;
+
+parent.addEventListener("mousedown", (e) => mouseIsDown(e));
+parent.addEventListener("mouseup", (e) => mouseUp(e));
+parent.addEventListener("mouseleave", (e) => mouseLeave(e));
+parent.addEventListener("mousemove", (e) => mouseMove(e));
+
+function mouseIsDown(e) {
+  parent.style.cursor = 'grabbing';
+       /*ele.style.userSelect = 'none';*/
+  isDown = true;
+  startY = e.pageY - parent.offsetTop;
+  scrollTop = parent.scrollTop;
+}
+function mouseUp(e) {
+
+  isDown = false;
+}
+function mouseLeave(e) {
+  
+  isDown = false;
+}
+function mouseMove(e) {
+  if (isDown) {
+    e.preventDefault();
+    //Move vertcally
+    const y = e.pageY - parent.offsetTop;
+    const walkY = (y - startY) * 5;
+    parent.scrollTop = scrollTop - walkY;
+  }
+}
+
+</script>

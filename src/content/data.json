@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "tituloProyecto": "Vextre",
+      "id": "vextre",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v1.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v2.jpg",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v3.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v4.jpg",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v5.jpg",
+      "link": "https://vextre.org",
+      "year": "2021",
+      "description": "VEXTRE is an augmented reality project that visualizes the socio-economic situation of Extremadura, Spain related to each town and city. \n\n The project also contains data visualization in a map."
+    },
+    {
+      "tituloProyecto": "tacacocodin",
+      "id": "tacaco",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/tacaco0.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/tacaco0.jpg",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/tacaco2.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/tacaco3.jpg",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/tacaco4.jpg",
+      "link": "https://tacacocodin.com",
+      "year": "2020",
+      "description": "Website for the livecoding collective tacacocodin made up of Randall Sáenz, Pablo Cianca, Johann Stolz and Jose Pablo Saenz."
+    },
+    {
+      "tituloProyecto": "Cartografía del teatro de mujeres en Costa Rica",
+      "id": "carto",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/carto5.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/carto1.jpg",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/carto2.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/carto3.jpg",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/carto6.jpg",
+      "link": "https://www.cartografiateatrodemujerescr.com/",
+      "year": "2022",
+      "description": "This is an interactive map where you can see a list of theater productions directed by women in Costa Rica, from 2001 to 2022."
+    },
+    {
+      "tituloProyecto": "Tropical Lluvioso",
+      "id": "tropical",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/t2.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/t1.png",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/t2.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/t3.png",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/t4.jpg",
+      "link": "https://tropicallluvioso.com/",
+      "year": "2023",
+      "description": "Portfolio website for Tropical Lluvioso a trans-Caribbean production studio that accompanies that works on cinematographic, institutional and public stories."
+    },
+    {
+      "tituloProyecto": "Encuentro Cybercumbiero",
+      "id": "cybercumbia",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/cyber4.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/cyber.jpg",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/cyber2.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/cyber3.jpg",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/cyber5.jpg",
+      "link": "https://cybercumbiero.glitch.me",
+      "year": "2020",
+      "description": "WebVR application using Aframe, ThreeJS, WebRTC, NodeJS for streaming the Encuentro Cybercumbiero event that took place in September 2020"
+    },
+    {
+      "tituloProyecto": "saicomieoterror",
+      "id": "saico",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/saico2.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/saico1.jpg",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/saico3.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/saico4.jpg",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/saico5.jpg",
+      "link": "https://saicomieoterror.glitch.me",
+      "year": "2020",
+      "description": "WebVR application using Aframe, ThreeJS, WebRTC, NodeJS for streaming the saicomieoterror event that took place in October 2020"
+    },
+    {
+      "tituloProyecto": "Akivamosd3nuev0!?",
+      "id": "akivamo",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/av2.jpg",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/av1.jpg",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/av2.jpg",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/av3.jpg",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/av4.jpg",
+      "link": "https://akivamosdnu3vo.glitch.me/",
+      "year": "2021",
+      "description": "WebVR app using using Aframe, Hydra-synth and MediaPipe Machine Learning models for the project between SINESTESIA and CEARTES of the ITCR. The audiovisual piece was made with videos and photographs sent by those who participated in a call for material on pandemic daily life in August 2021."
+    }
+  ]
+}

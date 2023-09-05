@@ -1,0 +1,47 @@
+---
+
+import data from "../content/data.json"
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Navbar from '../components/Navbar.astro'
+import Projects from '../layouts/Projects.astro'
+import Hero from '../layouts/Hero.astro'
+import Footer from '../components/Footer.astro'
+import "../styles/global.css" 
+---
+
+<BaseLayout title="smosgasbord - portfolio" bg="bg-neutral">
+<section><canvas id="myCanvas" class="rounded-lg"></canvas></section>
+<Navbar/> 
+
+<Hero />
+
+
+<Projects/>
+
+ 
+<BaseLayout/>
+
+<Footer/>
+</div>
+
+<script is:inline src="https://unpkg.com/hydra-synth"></script>
+<script is:inline>
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas"),
+        detectAudio: false,
+      });
+     src(o0).scale(1.1).layer(osc(10, 0.1, 0.5).blend(osc(10,0.1,0).color(2)).mask(shape(3,0.1,0.7)).rotate()
+        .color(0.85,1.00,0.10).saturate(4).modulate(o0,0.053)
+        .modulate(noise(2, 0.07), () => mouse.x / 600).scale(1).blend(o0,0.8).blend(o0,0.4)
+        .blend(o0,0.2).modulate(o0,0.04)).out();
+    </script>
+
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+<script client:only>
+
+(function () {
+        const locomotiveScroll = new LocomotiveScroll();
+    })();
+  
+</script>*/

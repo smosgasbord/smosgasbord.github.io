@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+@font-face {
+  font-family: 'jgs';
+  src: url('https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/jgs7.woff');
+}
+@font-face {
+  font-family: 'pilow';
+  src: url('https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/Millimetre-Regular_web.woff');
+}
+
+body,
+html {
+  margin: 2px;
+  /*
+  
+  background-color: black;*/
+}
+
+body {
+  margin: revert !important;
+}
+
+* {
+  font-family: 'jgs', sans-serif;
+}
+
+.white-back {
+  background-color: black;
+}
+
+h1 {
+  font-style: italic;
+  color: #ff0066;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+/*section {
+  height:100vh;
+}*/
+
+section {
+  display: grid;
+  align-content: center;
+}
+
+#myCanvas {
+  width: 95%;
+  height: 95vh;
+  z-index: 0;
+  display: grid;
+  align-self: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.title-font {
+  font-family: 'pilow', sans-serif;
+}
+
+mainTitle {
+  /*font-size: 10vw;*/
+  color: white !important;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1em;
+}
+
+.grid-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+card {
+  width: 100%;
+  display: grid;
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+}
+
+card > img {
+  height: 100%;
+}
+
+/*
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+fixed h-screen z-1 t-0 r-0 bg-base-200 overflow-x-hidden ease-in-out duration-500 pt-5
+
+absolute t-0 r-3 text-lg ml-2
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+*/

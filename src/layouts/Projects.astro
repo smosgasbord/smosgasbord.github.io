@@ -1,0 +1,46 @@
+---
+   import data from "../content/data.json"
+   import "../styles/flickity.css"
+   
+   //import flickity from flickity
+   var projects = data.projects;
+   projects = projects.slice(0,5)
+
+   //console.log(projects)
+
+---
+  <section id="" class="m-5 bg-accent p-7 rounded-lg">
+<h3 class="text-right text-3xl lg:text-5xl title-font text-neutral mb-2">
+<a href="/projects" class="uppercase">selected works</a>
+</h3>
+
+<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,"pageDots": false,"dragThreshold": 10, "autoPlay": 3500,
+"pauseAutoPlayOnHover": true }'>
+{projects.map((project) => 
+
+  <div class="gallery-cell lg:w-1/2 m-1 lg:h-60">
+  <a href={`/projects/${project.id}`}>
+    <img width="100%" height="100%" class="grayscale hover:grayscale-0 object-fill hover:saturate-200 " src={project.imgcover} loading="lazy" />
+     </a>
+  </div> 
+
+)}
+</div>
+
+
+<!--div class=" h-64 lg:h-96 carousel carousel-vertical lg:carousel-center rounded-box">
+{projects.map((project) => 
+
+  <div class="carousel-item m-1">
+  <a href={`/projects/${project.id}`}>
+    <img class="lg:w-1/2 hover:saturate-200 rounded-box" src={project.imgcover} loading="lazy" class="rounded-box" />
+     </a>
+  </div> 
+
+)} 
+  </div-->
+
+<!--a class="flex content-center hover:bg-neutral hover:rounded-full hover:p-2 text-center w-1/2" href="/projects/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path class="hover:fill-neutral	hover:fill-white	" style="fill:white" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg></a--> 
+</section>
+
+<script is:inline src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
