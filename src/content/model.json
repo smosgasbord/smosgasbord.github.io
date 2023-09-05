@@ -1,9 +1,7 @@
 {
   ":name": "CMS smosgasbord",
-  "portfolio": {
-    "title": {
-      ":type": "line"
-    },
+  "projects": {
+    ":name": "Projects",
     ":items": {
       "id": {
         ":type": "line"
@@ -43,7 +41,6 @@
           }
         }
       }
-    },
-    ":name": "projects"
+    }
   }
 }
