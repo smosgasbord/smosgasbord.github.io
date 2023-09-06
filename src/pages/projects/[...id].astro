@@ -28,11 +28,25 @@ const {  tituloProyecto, imgcover,year, description, link, img1,img2,img3,img4 }
 
 <BaseLayout title={tituloProyecto} bg="bg-base-200">
 <Navbar/>
-<section  class="grid place-content-center  text-center rounded-box">
-<div id="carousel" class="h-96  carousel carousel-vertical rounded-box overflow-x-hidden">
+<section  class="grid place-content-center text-center rounded-box">
+
+
+<div class="grid place-content-center text-center p-5 ">
+<div class=" title-font text-2xl text-neutral uppercase">{tituloProyecto}</div>
+<div class="text-left  text-lg lg:ml-12 lg:mr-12 lg:mt-4 m-4 lg:mb-0 text-neutral">{description}</div>
+<a class="btn m-5 w-11/12 bg-accent hover:bg-secondary text-neutral" target="_blank" href={link}>Check it out</a>
+</div>
+<gallery class="mr-5 grid" >
+<img src={img1} data-scroll="" data-scroll-speed="0.1" class="object-fill rounded-lg m-2">
+ <img src={img2} class="object-fill rounded-lg m-2">
+  <img src={img3} class="object-fill rounded-lg m-2">
+   <img src={img4} class="object-fill rounded-lg m-2">
+</gallery>
+
+<!--div id="carousel" class="h-96 place-content-center  carousel carousel-vertical rounded-box overflow-x-hidden">
   <div class="carousel-item group lg:h-full h-1/2">
-        <img src={img1} class="object-fill rounded-lg m-2">
-        <p class="absolute p-2 translate-y-96 group-hover:hidden">Scroll Down or Drag </p>
+         <img src={img1} class="object-fill rounded-lg m-2">
+        
   </div>
   <div class="carousel-item lg:h-full h-1/2">
         <img src={img2} class="object-fill rounded-lg m-2">
@@ -43,15 +57,11 @@ const {  tituloProyecto, imgcover,year, description, link, img1,img2,img3,img4 }
    <div class="carousel-item lg:h-full h-1/2">
        <img src={img4} class="object-fill rounded-lg m-2">
   </div>
-  </div>
+  </div-->
   
 
 
-<div class="grid place-content-center text-center absolute bottom-0 rounded-lg p-5 ">
-<div class=" title-font text-2xl text-neutral uppercase">{tituloProyecto}</div>
-<div class="text-left  text-lg lg:ml-12 lg:mr-12 lg:mt-4 m-4 lg:mb-0 text-neutral">{description}</div>
-<a class="btn m-5 w-11/12 bg-accent hover:bg-secondary text-neutral" target="_blank" href={link}>Check it out</a>
-</div>
+
 
 </section>
 

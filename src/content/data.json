@@ -84,5 +84,12 @@
       "year": "2021",
       "description": "WebVR app using using Aframe, Hydra-synth and MediaPipe Machine Learning models for the project between SINESTESIA and CEARTES of the ITCR. The audiovisual piece was made with videos and photographs sent by those who participated in a call for material on pandemic daily life in August 2021."
     }
-  ]
+  ],
+  "about": {
+    "about": "Welcome,! Here technology, creativity, and collaboration  merge seamlessly to bring your digital dreams to life. I'm a dedicated solution provider, ready to craft innovative answers to your challenges.",
+    "apart": "I bring more to the table than lines of code or a list of technical skills. I bring a mindset that constantly seeks improvement, a spirit that thrives on collaboration, and a heart that beats for the betterment of others. My work isn't just about building websites; it's about crafting immersive experiences, weaving stories, and solving problems.",
+    "apart2": "I possess a diverse skill set that includes proficiency in HTML/CSS/JavaScript, PHP, Handlebars, Astro, and WordPress. My expertise extends to XR, 3D, Data Visualization, Maps/Georeferencing, and Machine Learning Libraries. I'm well-versed in open-source technologies, and they are my passion. Additionally, my technical proficiencies cover various tools in the realms of Infrastructure, Cloud, Databases, and Virtualization.",
+    "why": "<ul class='m-5'>\r\n    <li><strong>Collaboration:</strong> I believe in working hand-in-hand with you, valuing your insights, and ensuring your vision shines through in every project.</li>\r\n    <li><strong>Innovation:</strong> I&#39;m not afraid to explore new frontiers and experiment with the latest technologies to find tailored solutions that truly stand out.</li>\r\n    <li><strong>Adventurous Spirit:</strong> I approach challenges like exciting adventures, welcoming each one as an opportunity to learn and grow.</li>\r\n    <li><strong>Wide Expertise:</strong> My skillset encompasses a broad range of technical proficiencies, enabling me to tackle diverse projects with confidence.</li>\r\n  </ul>",
+    "colab": "Whether you're a social organization, an independent project, or a public institution, I'm here to provide you with excellent solutions. Let's embark on a journey together, one that leads to web experiences that leave a lasting impact."
+  }
 }

@@ -6,41 +6,32 @@ import Navbar from '../components/Navbar.astro'
 import Footer from '../components/Footer.astro'
 import "../styles/global.css" 
 
-var projects = data.projects;
+var about = data.about;
 
 ---
 <BaseLayout title="Web Dev - Portfolio - smosgasbord" bg="bg-base-300">
 <!--section><canvas id="myCanvas" class="rounded-lg"></canvas></section-->
 <Navbar/> 
-<section class="rounded-md min-h-screen m-7 lg:m-10">
+<section class="rounded-md min-h-screen m-7 lg:m-10 text-xl ">
 <div class="title-font text-center text-5xl lg:text-7xl m-5 text-neutral">About Me</div>
-<p class='m-5'>Welcome to my world, where technology, creativity, and collaboration seamlessly merge to bring your digital dreams to life. I&#39;m not just your run-of-the-mill technical person; I&#39;m your dedicated solution provider, ready to craft innovative answers to your challenges.</p>
-
-<div class="text-center title-font text-3xl lg:text-5xl">Who am I?</div>
-
-<p class='m-5'>I&#39;m the web wizard who finds inspiration in nature and adventure. I&#39;m the artist who dives deep into the internet, exploring a wide array of interests. I&#39;m the listener, the observer, the one who takes the time to understand your unique needs. I&#39;m the collaborator, the innovator, and the one who embraces every challenge with determination.</p>
+<p class=' m-5'>{about.about}</p>
 
 <div class="text-center title-font text-3xl lg:text-5xl">What Sets Me Apart?</div>
 
-<p class='m-5'>I bring more to the table than lines of code or a list of technical skills. I bring a mindset that constantly seeks improvement, a spirit that thrives on collaboration, and a heart that beats for the betterment of others. My work isn&#39;t just about building websites; it&#39;s about crafting immersive experiences, weaving stories, and solving problems.</p>
+<p class='m-5'>{about.apart}</p>
 
-<p class='m-5'>I possess a diverse skill set that includes proficiency in JavaScript, PHP, Handlebars, Astro, React, and WordPress. My expertise extends to XR, 3D, Data Visualization, Maps/Georeferencing, and Machine Learning Libraries. I'm well-versed in open-source technologies, and they are my passion. Additionally, my technical proficiencies cover various tools in the realms of Infrastructure, Cloud, Databases, and Virtualization.</p>
+<p class='m-5'>{about.apart2}</p>
 
 <div class="text-center title-font text-3xl lg:text-5xl">Why Choose Me?</div>
 
-<ul class="m-5">
-	<li><strong>Collaboration:</strong> I believe in working hand-in-hand with you, valuing your insights, and ensuring your vision shines through in every project.</li>
-	<li><strong>Innovation:</strong> I&#39;m not afraid to explore new frontiers and experiment with the latest technologies to find tailored solutions that truly stand out.</li>
-	<li><strong>Adventurous Spirit:</strong> I approach challenges like exciting adventures, welcoming each one as an opportunity to learn and grow.</li>
-	<li><strong>Wide Expertise:</strong> My skillset encompasses a broad range of technical proficiencies, enabling me to tackle diverse projects with confidence.</li>
-</ul>
+<div set:html={about.why}></div>
 
 <div class="text-center title-font text-3xl lg:text-5xl">Let&#39;s Collaborate</div>
 
-<p class='m-5'>Whether you&#39;re a social organization, an independent project, or a public institution, I&#39;m here to provide you with excellent solutions. Let&#39;s embark on a journey together, one that leads to web experiences that leave a lasting impact.</p>
+<p class='m-5'>{about.colab} </p>
 
 
-<button onclick='openNav()' class='m-7 uppercase btn rounded-box'>Let's get in touch</button>
+<button onclick='openNav()' class='m-7 uppercase btn-secondary rounded-box '>Let's get in touch</button>
 </section>
 
 </BaseLayout>
