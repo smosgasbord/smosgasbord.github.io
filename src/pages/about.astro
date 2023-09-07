@@ -13,22 +13,25 @@ var about = data.about;
 <!--section><canvas id="myCanvas" class="rounded-lg"></canvas></section-->
 <Navbar/> 
 <section class="rounded-md min-h-screen m-7 lg:m-10 text-xl ">
-<div class="title-font text-center text-5xl lg:text-7xl m-5 text-neutral">About Me</div>
-<p class=' m-5'>{about.about}</p>
 
-<div class="text-center title-font text-3xl lg:text-5xl">What Sets Me Apart?</div>
+<div  class="bg-accent text-neutral p-5 rounded-lg mb-5"><div class="title-font text-center text-5xl lg:text-7xl m-5 text-neutral">About Me</div>
+<p class=' m-5 uppercase'>{about.about}</p></div>
+
+
+<div class="bg-neutral text-white p-5 rounded-lg mb-5"><div class="text-center title-font text-3xl lg:text-5xl">What Sets Me Apart?</div>
 
 <p class='m-5'>{about.apart}</p>
 
-<p class='m-5'>{about.apart2}</p>
+<p class=' m-5'>{about.apart2}</p></div>
 
+<div class="bg-accent text-neutral p-5 rounded-lg mb-5">
 <div class="text-center title-font text-3xl lg:text-5xl">Why Choose Me?</div>
 
-<div set:html={about.why}></div>
-
+<div set:html={about.why}></div></div>
+<div class="bg-neutral text-white p-5 rounded-lg mb-5">
 <div class="text-center title-font text-3xl lg:text-5xl">Let&#39;s Collaborate</div>
 
-<p class='m-5'>{about.colab} </p>
+<p class=' m-5'>{about.colab} </p></div>
 
 
 <button onclick='openNav()' class='m-7 uppercase btn-secondary rounded-box '>Let's get in touch</button>
