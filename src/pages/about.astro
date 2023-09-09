@@ -12,12 +12,11 @@ var about = data.about;
 <BaseLayout title="Web Dev - Portfolio - smosgasbord" bg="bg-base-300">
 <!--section><canvas id="myCanvas" class="rounded-lg"></canvas></section-->
 <Navbar/> 
-<section class="rounded-md min-h-screen m-7 lg:m-10 text-xl ">
+<section class="rounded-md min-h-screen m-7 lg:m-10 text-xl lg:w-7/12 lg:m-auto">
 
 <div  class="bg-accent text-neutral p-5 rounded-lg mb-5"><div class="title-font text-center text-5xl lg:text-7xl m-5 text-neutral">About Me</div>
-<p class=' m-5 uppercase'>{about.about}</p></div>
-
-
+<p class=' m-5  '>{about.about}</p></div>
+<img src="https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/ico.png?v=1694048980703" class="w-full rounded-box lg:w-5/12 m-auto mb-10" alt="">
 <div class="bg-neutral text-white p-5 rounded-lg mb-5"><div class="text-center title-font text-3xl lg:text-5xl">What Sets Me Apart?</div>
 
 <p class='m-5'>{about.apart}</p>
@@ -28,6 +27,7 @@ var about = data.about;
 <div class="text-center title-font text-3xl lg:text-5xl">Why Choose Me?</div>
 
 <div set:html={about.why}></div></div>
+<img src="https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/photo_2022-01-02_18-52-48.jpg?v=1694269423056" class="w-full lg:w-5/12 rounded-box m-auto mb-10" alt="">
 <div class="bg-neutral text-white p-5 rounded-lg mb-5">
 <div class="text-center title-font text-3xl lg:text-5xl">Let&#39;s Collaborate</div>
 

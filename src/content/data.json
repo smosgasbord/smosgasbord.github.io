@@ -86,10 +86,42 @@
     }
   ],
   "about": {
-    "about": "Welcome! Here technology, creativity, and collaboration  merge seamlessly to bring your digital dreams to life. I'm a dedicated solution provider, ready to craft innovative answers to your challenges. 'smosgasbord' comes from smörgåsbord, a swedish word, which one of its meanings is 'a wide range of something; a variety', and this is what this is: a digital smorgasbord.",
+    "about": "Welcome! Here technology, creativity, and collaboration  merge seamlessly to bring your digital dreams to life. I'm a dedicated solution provider, ready to craft innovative answers to your challenges. 'smosgasbord' is derived from the Swedish word 'smörgåsbord', which means 'a wide range of something; a variety.' In this context, this project is a digital smorgasbord, offering a diverse range of options and possibilities.",
     "apart": "I bring more to the table than lines of code or a list of technical skills. I bring a mindset that constantly seeks improvement, a spirit that thrives on collaboration, and a heart that beats for the betterment of others. My work isn't just about building websites; it's about crafting immersive experiences, weaving stories, and solving problems.",
     "apart2": "I possess a diverse skill set that includes proficiency in HTML/CSS/JavaScript, PHP, Handlebars, Astro, and WordPress. My expertise extends to XR, 3D, Data Visualization, Maps/Georeferencing, and Machine Learning Libraries. I'm well-versed in open-source technologies, and they are my passion. Additionally, my technical proficiencies cover various tools in the realms of Infrastructure, Cloud, Databases, and Virtualization.",
     "why": "<ul class='m-5'>\r\n    <li><strong>Collaboration:</strong> I believe in working hand-in-hand with you, valuing your insights, and ensuring your vision shines through in every project.</li>\r\n    <li><strong>Innovation:</strong> I&#39;m not afraid to explore new frontiers and experiment with the latest technologies to find tailored solutions that truly stand out.</li>\r\n    <li><strong>Adventurous Spirit:</strong> I approach challenges like exciting adventures, welcoming each one as an opportunity to learn and grow.</li>\r\n    <li><strong>Wide Expertise:</strong> My skillset encompasses a broad range of technical proficiencies, enabling me to tackle diverse projects with confidence.</li>\r\n  </ul>",
     "colab": "Whether you're a social organization, an independent project, or a public institution, I'm here to provide you with excellent solutions. Let's embark on a journey together, one that leads to web experiences that leave a lasting impact."
-  }
+  },
+  "services": [
+    {
+      "tituloServicio": "WEB DEVELOPMENT",
+      "description": "Our web development services encompass designing and creating custom websites tailored to your unique needs, ensuring a seamless online presence.",
+      "imgServicio": ""
+    },
+    {
+      "tituloServicio": "INTERACTIVE DATA VISUALIZATION",
+      "description": "We specialize in creating interactive data visualizations that transform complex data sets into visually engaging and understandable insights.",
+      "imgServicio": ""
+    },
+    {
+      "tituloServicio": "HOSTING MIGRATION",
+      "description": "We offer hassle-free hosting migration services, ensuring a smooth transition of your website or application to a new hosting environment.",
+      "imgServicio": ""
+    },
+    {
+      "tituloServicio": "WEBSITE ADMINISTRATION",
+      "description": "Our website administration services take care of the day-to-day management and maintenance of your website, allowing you to focus on your core business.",
+      "imgServicio": ""
+    },
+    {
+      "tituloServicio": "SEO AND WEBSITE OPTIMIZATION",
+      "description": "We optimize your website for search engines, enhancing its visibility and ranking to attract more organic traffic and improve online performance.",
+      "imgServicio": ""
+    },
+    {
+      "tituloServicio": "ORGANIZATION PROCESS DIGITIZATION",
+      "description": "We help streamline your organization's processes by digitizing and automating workflows, increasing efficiency and reducing manual efforts.",
+      "imgServicio": ""
+    }
+  ]
 }

@@ -1,30 +1,39 @@
 ---
+import data from "../content/data.json"
 import "../styles/locomotive.css";
 
+var services = data.services;
 
 ---
 <div class="rounded-md hero min-h-screen z-10 ">
 
   <div class="hero-content m-6 lg:m-10 ">
   <mainTitle class="title-font text-5xl lg:text-7xl" data-scroll data-scroll-speed="-0.2">Let's transform your visions into digital reality</mainTitle>
-    <!--div class="max-w-md backdrop-blur-sm bg-white/10 rounded-md shadow">
-      
-      <p class="py-6 text-white">Multidisciplinary Artist and Web Developer working on Immersive, Creative code and XR Experiences for Public Institutions, Social Organizations & Art Collectives</p>
-      
-    </div-->
   </div>
 </div>
 <div id="categories" class="m-10 -translate-y-10 text-white text-4xl"></div>
 <section class="m-5 bg-base-200 p-7 rounded-box pb-7">
-<div class="uppercase text-3xl lg:text-5xl   text-right">Services</div>
-<ul class="ml-5 text-primary">
-<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl  " data-scroll data-scroll-speed="-0.01"  data-scroll-direction="vertical"  data-scroll-delay="0.06" onclick="openNav()">Web Development</li>
-<li class="list-disc	uppercase  hover:text-primary-focus text-3xl lg:text-5xl " data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal" onclick="openNav()">Interactive Data Visualization</li>
-<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl  " data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal" onclick="openNav()">Hosting Migration</li>
-<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl  "data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal" onclick="openNav()">Website Administration </li>
-<li class="list-disc	uppercase  hover:text-primary-focus text-3xl lg:text-5xl " data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal" onclick="openNav()">SEO and Website Optimization</li>
-<li class="list-disc	uppercase  hover:text-primary-focus text-3xl lg:text-5xl " data-scroll data-scroll-speed="-0.01" data-scroll-direction="horizontal" onclick="openNav()"> Organization Process Digitization</li>
-</ul>
+<div class="uppercase text-3xl lg:text-5xl   text-right title-font">Services</div>
+<!--ul class="ml-5">
+{services.map((service) => 
+<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl ">{service.tituloServicio}</li>
+)}
+</ul-->
+
+
+{services.map((service) => 
+<div tabindex="0" class="collapse collapse-arrow bg-base-200 text-neutral rounded-box focus:bg-secondary focus:text-secondary-content  ">
+  <div class="collapse-title list-disc	uppercase  text-3xl lg:text-5xl">
+   {service.tituloServicio}
+  </div>
+  <div class="collapse-content  text-xl"> 
+    <p>{service.description}</p>
+  </div>
+</div>
+
+)}
+
+
 </section>
 
 

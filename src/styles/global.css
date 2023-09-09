@@ -4,8 +4,12 @@
   src: url('https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/jgs7.woff');
 }
 @font-face {
-  font-family: 'pilow';
+  font-family: 'mil-re';
   src: url('https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/Millimetre-Regular_web.woff');
+}
+@font-face {
+  font-family: 'mil-li';
+  src: url('https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/Millimetre-Light.otf?v=1694269724122');
 }
 
 body,
@@ -63,7 +67,11 @@ section {
 }
 
 .title-font {
-  font-family: 'pilow', sans-serif;
+  font-family: 'mil-re', sans-serif;
+}
+
+.title-font-li {
+  font-family: 'mil-li', sans-serif;
 }
 
 mainTitle {
