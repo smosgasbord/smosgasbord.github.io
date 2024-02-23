@@ -33,7 +33,7 @@ const {  tituloProyecto, imgcover,year, description, link, img1,img2,img3,img4 }
 
 <div class="grid place-content-center text-center p-5 ">
 <div class=" title-font text-2xl text-neutral uppercase">{tituloProyecto}</div>
-<div class="text-left  text-lg lg:ml-12 lg:mr-12 lg:mt-4 m-4 lg:mb-0 text-neutral">{description}</div>
+<div class="text-left  text-lg lg:ml-12 lg:mr-12 lg:mt-4 m-4 lg:mb-0 text-neutral" set:html={description}></div> 
 <a class="btn m-5 w-11/12 bg-accent hover:bg-secondary text-neutral" target="_blank" href={link}>Check it out</a>
 </div>
 <gallery class="mr-5 lg:m-auto lg:rounded-lg lg:carousel lg:carousel-vertical lg:h-96 lg:w-1/2" >
