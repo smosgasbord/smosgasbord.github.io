@@ -105,6 +105,11 @@
       "imgServicio": ""
     },
     {
+      "tituloServicio": "DIGITAL AUTOMATION AND SCRIPTING",
+      "description": "We help streamline your organization's processes by digitizing and automating workflows, increasing efficiency and reducing manual efforts.",
+      "imgServicio": ""
+    },
+    {
       "tituloServicio": "HOSTING MIGRATION",
       "description": "We offer hassle-free hosting migration services, ensuring a smooth transition of your website or application to a new hosting environment.",
       "imgServicio": ""
@@ -117,11 +122,6 @@
     {
       "tituloServicio": "SEO AND WEBSITE OPTIMIZATION",
       "description": "We optimize your website for search engines, enhancing its visibility and ranking to attract more organic traffic and improve online performance.",
-      "imgServicio": ""
-    },
-    {
-      "tituloServicio": "DIGITAL AUTOMATION AND SCRIPTING",
-      "description": "We help streamline your organization's processes by digitizing and automating workflows, increasing efficiency and reducing manual efforts.",
       "imgServicio": ""
     }
   ]
