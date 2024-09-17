@@ -1,5 +1,6 @@
 {
   "projects": [
+    {},
     {
       "tituloProyecto": "Vextre",
       "id": "vextre",
@@ -84,7 +85,6 @@
       "year": "2020",
       "description": "WebVR application using Aframe, ThreeJS, WebRTC, NodeJS for streaming the saicomieoterror event that took place in October 2020. <br><br> Best experienced on a computer."
     }
-    
   ],
   "about": {
     "about": "Welcome! Here technology, creativity, and collaboration  merge seamlessly to bring your digital dreams to life. I'm a dedicated solution provider, ready to craft innovative answers to your challenges. 'smosgasbord' is derived from the Swedish word 'smörgåsbord', which means 'a wide range of something; a variety.' In this context, this project is a digital smorgasbord, offering a diverse range of options and possibilities.",
@@ -120,7 +120,7 @@
       "imgServicio": ""
     },
     {
-      "tituloServicio": "ORGANIZATION PROCESS DIGITIZATION",
+      "tituloServicio": "DIGITAL AUTOMATION AND SCRIPTING",
       "description": "We help streamline your organization's processes by digitizing and automating workflows, increasing efficiency and reducing manual efforts.",
       "imgServicio": ""
     }
