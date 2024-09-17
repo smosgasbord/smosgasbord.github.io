@@ -3,6 +3,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Navbar from '../../components/Navbar.astro'
 import Footer from '../../components/Footer.astro'
+import Cursor from '../../components/Cursor.astro'
 import "../../styles/global.css" 
 
 var projects = data.projects;
@@ -36,12 +37,14 @@ const {  tituloProyecto, imgcover,year, description, link, img1,img2,img3,img4 }
 <div class="text-left  text-lg lg:ml-12 lg:mr-12 lg:mt-4 m-4 lg:mb-0 text-neutral" set:html={description}></div> 
 <a class="btn m-5 w-11/12 bg-accent hover:bg-secondary text-neutral" target="_blank" href={link}>Check it out</a>
 </div>
+<Cursor wrapperClass="my-content" >
 <gallery class="mr-5 lg:m-auto lg:rounded-lg lg:carousel lg:carousel-vertical lg:h-96 lg:w-1/2" >
 <img src={img1} data-scroll="" data-scroll-speed="0.1" class="object-fill rounded-lg m-2">
  <img src={img2} class="object-fill rounded-lg m-2">
   <img src={img3} class="object-fill rounded-lg m-2">
    <img src={img4} class="object-fill rounded-lg m-2">
 </gallery>
+<Cursor/>
 
 <!--div id="carousel" class="h-96 place-content-center  carousel carousel-vertical rounded-box overflow-x-hidden">
   <div class="carousel-item group lg:h-full h-1/2">
