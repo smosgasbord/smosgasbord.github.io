@@ -1,45 +1,74 @@
 {
-  ":name": "CMS smosgasbord",
+  ":name": "Portfolio Data Model",
+  ":description": "This model organizes data for a portfolio website, including projects, about section, and services.",
   "projects": {
-    ":name": "Projects",
     ":items": {
-      "id": {
-        ":type": "line"
-      },
       "tituloProyecto": {
         ":type": "line"
       },
-      "year": {
-        ":type": "line",
-        ":name": "year"
-      },
-      "link": {
-        ":type": "line",
-        ":name": "link"
-      },
-      "description": {
-        ":type": "line",
-        ":name": "description"
+      "id": {
+        ":type": "line"
       },
       "imgcover": {
-        ":type": "image",
-        ":name": "imgcover"
+        ":type": "line"
       },
-       "galeria": {
-      ":name": "Galería",
-      ":items": {
-        "image": {
-          ":type": "image"
-        }
+      "img1": {
+        ":type": "line"
+      },
+      "img2": {
+        ":type": "line"
+      },
+      "img3": {
+        ":type": "line"
+      },
+      "img4": {
+        ":type": "line"
+      },
+      "link": {
+        ":type": "line"
+      },
+      "year": {
+        ":type": "line"
+      },
+      "description": {
+        ":type": "text",
+        ":richtext": true
       }
+    }
+  },
+  "about": {
+    "about": {
+      ":type": "text",
+      ":richtext": true
     },
-      "categories": {
-        ":name": "Categories",
-        ":items": {
-          "category": {
-            ":type": "line"
-          }
-        }
+    "apart": {
+      ":type": "text",
+      ":richtext": true
+    },
+    "apart2": {
+      ":type": "text",
+      ":richtext": true
+    },
+    "why": {
+      ":type": "text",
+      ":richtext": true
+    },
+    "colab": {
+      ":type": "text",
+      ":richtext": true
+    }
+  },
+  "services": {
+    ":items": {
+      "tituloServicio": {
+        ":type": "line"
+      },
+      "description": {
+        ":type": "text",
+        ":richtext": true
+      },
+      "imgServicio": {
+        ":type": "line"
       }
     }
   }
