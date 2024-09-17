@@ -1,16 +1,28 @@
 {
   "projects": [
     {
-      "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Ecotattooing.com\">Ecotattooing.com</a> is website to showcase the artists and suppliers who want to eliminate single-use plastics in exchange for compostable and biodegradable options in the world of tattooing. <br>I provided web design and development services as well as automation of certain processes that were manual before such as the map update after registration and a more complex form that changes based on users responses. </p>",
-      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e1.png?v=1726552152698",
-      "id": "ecotattoo",
-      "tituloProyecto": "EcoTattooing",
-      "link": "https://ecotattooing.com",
+      "description": "<p>5 Ways To Innovate is on a mission to help 1,000 corporates reinvent themselves to build the business of tomorrow. <br>I developed a tool that generates reports based on a simple survey to assess organisations current innovation score. <br>To implement this we used Squarespace to deploy the website, we used custom code to augment the possibilities and generate a report for users. <br>As soon as users complete the survey they receive an automated and custom designed email with a personalized link for their assessment. Used: Zapier, Surveymonkey, Javascript, Google Appscript, Google Sheets and D3js.</p>",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/5wti2.png?v=1726558842459",
+      "id": "5wti",
+      "tituloProyecto": "5 Ways To Innovate",
+      "link": "https://5waystoinnovate.com",
       "year": "2024",
+      "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/5wti3.png?v=1726558842136",
+      "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/5wti0.png?v=1726558844266",
+      "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/5wti2.png?v=1726558842459",
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/5wti1.png?v=1726558843183"
+    },
+    {
+      "tituloProyecto": "EcoTattooing",
+      "id": "ecotattoo",
+      "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e1.png?v=1726552152698",
       "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e6.png?v=1726552156797",
       "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e2.png?v=1726552153862",
       "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e4.png?v=1726552154924",
-      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e1.png?v=1726552152698"
+      "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/e1.png?v=1726552152698",
+      "link": "https://ecotattooing.com",
+      "year": "2024",
+      "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Ecotattooing.com\">Ecotattooing.com</a> is website to showcase the artists and suppliers who want to eliminate single-use plastics in exchange for compostable and biodegradable options in the world of tattooing. <br>I provided web design and development services as well as automation of certain processes that were manual before such as the map update after registration and a more complex form that changes based on users responses. </p>"
     },
     {
       "tituloProyecto": "Vextre",
