@@ -7,6 +7,8 @@
    projects = projects.slice(0,5)
 
    //console.log(projects)
+   import Cursor from '../components/Cursor.astro';
+
 
 ---
   <script is:inline src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -15,6 +17,7 @@
 <a href="/projects" class="uppercase title-font">selected works</a>
 </h3>
 
+<Cursor wrapperClass="my-content">
 <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,"pageDots": false,"dragThreshold": 10, "autoPlay": 3500,
 "pauseAutoPlayOnHover": true }'>
 {projects.map((project) => 
@@ -27,6 +30,7 @@
 
 )}
 </div>
+<Cursor/>
 
 
 <!--div class=" h-64 lg:h-96 carousel carousel-vertical lg:carousel-center rounded-box">
