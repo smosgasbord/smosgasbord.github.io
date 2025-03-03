@@ -63,10 +63,30 @@ const testimonials: Testimonial[] = [
       ></button>
     ))}
   </div>
+<div class="flex justify-between mt-8">
+    <button 
+      id="prev-testimonial" 
+      class="bg-white text-primary hover:bg-primary/10 p-2 rounded-full shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
+      aria-label="Previous testimonial"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button 
+      id="next-testimonial" 
+      class="bg-white text-primary hover:bg-primary/10 p-2 rounded-full shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
+      aria-label="Next testimonial"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
 </div>
 
 <script>
-  // Initialize the slideshow
+ // Initialize the slideshow
   let currentSlide = 0;
   const slides = document.querySelectorAll('.testimonial-slide');
   const indicators = document.querySelectorAll('.testimonial-indicator');
@@ -99,12 +119,13 @@ const testimonials: Testimonial[] = [
     currentSlide = index;
   }
 
- function nextSlide() {
+  // Function to go to the next slide
+  function nextSlide() {
     const newIndex = (currentSlide + 1) % totalSlides;
     showSlide(newIndex);
   }
 
-// Function to go to the previous slide
+  // Function to go to the previous slide
   function prevSlide() {
     const newIndex = (currentSlide - 1 + totalSlides) % totalSlides;
     showSlide(newIndex);
@@ -114,6 +135,12 @@ const testimonials: Testimonial[] = [
   document.getElementById('next-testimonial')?.addEventListener('click', () => {
     clearInterval(slideInterval);
     nextSlide();
+    startSlideshow();
+  });
+
+  document.getElementById('prev-testimonial')?.addEventListener('click', () => {
+    clearInterval(slideInterval);
+    prevSlide();
     startSlideshow();
   });
 
@@ -128,7 +155,7 @@ const testimonials: Testimonial[] = [
 
   // Function to start the automatic slideshow
   function startSlideshow() {
-    slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    slideInterval = setInterval(nextSlide, 7000); // Change slide every 5 seconds
   }
 
   // Initialize the slideshow
