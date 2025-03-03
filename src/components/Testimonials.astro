@@ -99,7 +99,23 @@ const testimonials: Testimonial[] = [
     currentSlide = index;
   }
 
- 
+ function nextSlide() {
+    const newIndex = (currentSlide + 1) % totalSlides;
+    showSlide(newIndex);
+  }
+
+// Function to go to the previous slide
+  function prevSlide() {
+    const newIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(newIndex);
+  }
+
+  // Set up event listeners
+  document.getElementById('next-testimonial')?.addEventListener('click', () => {
+    clearInterval(slideInterval);
+    nextSlide();
+    startSlideshow();
+  });
 
   // Set up indicator clicks
   indicators.forEach((indicator, index) => {
