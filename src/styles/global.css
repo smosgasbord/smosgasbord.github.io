@@ -32,6 +32,10 @@ body {
   background-color: black;
 }
 
+.white-text {
+  color:white;
+}
+
 h1 {
   font-style: italic;
   color: #ff0066;
@@ -105,29 +109,3 @@ card > img {
   height: 100%;
 }
 
-/*
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-fixed h-screen z-1 t-0 r-0 bg-base-200 overflow-x-hidden ease-in-out duration-500 pt-5
-
-absolute t-0 r-3 text-lg ml-2
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-*/

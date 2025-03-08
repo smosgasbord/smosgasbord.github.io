@@ -5,6 +5,7 @@ interface Testimonial {
   name: string;
   position: string;
   company: string;
+  url: string;
   quote: string;
 }
 
@@ -15,12 +16,14 @@ const testimonials: Testimonial[] = [
     name: "Ryan Hanna",
     position: "Co-Founder",
     company: "Good Judy",
+    url: "https://goodjudy.ca",
     quote: "We cannot speak highly enough of Ran's expertise and efficiency in assisting Good Judy with building a comprehensive map of our top customers. His impressive knowledge of the coding industry and adjacent fields made the entire process smooth and seamless. Rans quick and precise service not only met our needs but exceeded our expectations. By streamlining our operations, he saved us thousands of dollars in both time and money. His work has provided invaluable insights that are already making a significant positive impact on our business"
   },{
     id: 2,
     name: "Jean Pullen",
     position: "CEO",
     company: "Regenerate Your Reality",
+    url: "https://regenerateyourreality.com",
     quote: "I highly recommend Randall based on my experience working with him for the past three years. He has been instrumental in solving all my IT issues, enhancing my website, and coding with incredible skill and ease. Randall is exceptionally patient and consistently finds effective solutions to any challenges I face. Because of his expertise and professionalism, I continue to recommend him to my clients, and I appreciate our collaboration both in person and online."
   },
   {
@@ -28,170 +31,36 @@ const testimonials: Testimonial[] = [
     name: "Roshan Chhotu ",
     position: "Co-Founder",
     company: "5 Ways To Innovate",
-    quote: "Ran was highly problem orientated, trying to find different kinds of solutions to the problem described versus the brief of the solution. He explored alternative solutions that might be a better fit including off the shelf solutions that would mean his services wouldn’t be required. Through the build he was: - Attentive to our needs - Transparent about what was out of scope, what can / can’t be done easily - Communicated regularly about timelines and what he needs to - Creative problem solver - Explained the process of the solution - Files he handed over were well structured and organised - Helpful during testing to figure out what was a business logic issue versus a technical issue"
+    url: "https://5waystoinnovate",
+    quote: "Ran was highly problem orientated, trying to find different kinds of solutions to the problem described versus the brief of the solution. He explored alternative solutions that might be a better fit including off the shelf solutions that would mean his services wouldn't be required. Through the build he was: - Attentive to our needs - Transparent about what was out of scope - Communicated regularly about timelines and what he needs to - Creative problem solver"
   }
 ];
 ---
 
-<div class="testimonial-slideshow relative overflow-hidden bg-white rounded-lg shadow-lg m-5 p-2">
+<div class="p-5">
+  <h2 class="uppercase text-3xl white-text lg:text-5xl p-4 title-font mb-8">What Our Clients Say</h2>
   
-  <h2 class="uppercase text-3xl lg:text-5xl  p-4 text-right title-font">What Our Clients Say</h2>
-  
-  <div class="testimonial-container relative">
-    {testimonials.map((testimonial, index) => (
-      <div 
-        class="testimonial-slide absolute top-0 left-0 w-full opacity-0 transition-all duration-500 ease-in-out"
-        data-index={index}
-      >
-        <div class="flex flex-col items-center text-center px-4">
-          <blockquote class="text-lg italic text-gray-700 mb-4">"{testimonial.quote}"</blockquote>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {testimonials.map((testimonial) => (
+      <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-xl">
+        <blockquote class="text-lg italic text-gray-700 mb-6 flex-grow">"{testimonial.quote}"</blockquote>
+        <div class="mt-auto">
           <div class="font-semibold text-gray-900">{testimonial.name}</div>
-          <div class="text-sm text-gray-600">{testimonial.position}, {testimonial.company}</div>
+          <div class="text-sm text-gray-600">
+            {testimonial.position}, <strong><a href={testimonial.url} class="text-primary hover:underline">{testimonial.company}</a></strong>
+          </div>
         </div>
       </div>
     ))}
   </div>
-  
-  <div class="flex justify-center mt-8 space-x-2">
-    {testimonials.map((_, index) => (
-      <button 
-        class="testimonial-indicator w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 hover:bg-primary/70 focus:outline-none focus:ring-2 focus:ring-primary/50"
-        data-index={index}
-        aria-label={`Go to testimonial ${index + 1}`}
-      ></button>
-    ))}
-  </div>
-<!--div class="flex justify-between mt-8">
-    <button 
-      id="prev-testimonial" 
-      class="bg-white text-primary hover:bg-primary/10 p-2 rounded-full shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
-      aria-label="Previous testimonial"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-    </button>
-    <button 
-      id="next-testimonial" 
-      class="bg-white text-primary hover:bg-primary/10 p-2 rounded-full shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
-      aria-label="Next testimonial"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-  </div-->
 </div>
 
-<script>
- // Initialize the slideshow
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.testimonial-slide');
-  const indicators = document.querySelectorAll('.testimonial-indicator');
-  const totalSlides = slides.length;
-  let slideInterval: number;
-
-  // Function to show a specific slide
-  function showSlide(index: number) {
-    // Hide all slides
-    slides.forEach((slide) => {
-      slide.classList.remove('opacity-100', 'z-10');
-      slide.classList.add('opacity-0', 'z-0');
-    });
-    
-    // Update indicators
-    indicators.forEach((indicator) => {
-      indicator.classList.remove('bg-primary', 'w-6');
-      indicator.classList.add('bg-gray-300', 'w-3');
-    });
-    
-    // Show the current slide
-    slides[index].classList.remove('opacity-0', 'z-0');
-    slides[index].classList.add('opacity-100', 'z-10');
-    
-    // Update the current indicator
-    indicators[index].classList.remove('bg-gray-300', 'w-3');
-    indicators[index].classList.add('bg-primary', 'w-6');
-    
-    // Update current slide index
-    currentSlide = index;
-  }
-
-  // Function to go to the next slide
-  function nextSlide() {
-    const newIndex = (currentSlide + 1) % totalSlides;
-    showSlide(newIndex);
-  }
-
-  // Function to go to the previous slide
-  function prevSlide() {
-    const newIndex = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(newIndex);
-  }
-
-  // Set up event listeners
-  document.getElementById('next-testimonial')?.addEventListener('click', () => {
-    clearInterval(slideInterval);
-    nextSlide();
-    startSlideshow();
-  });
-
-  document.getElementById('prev-testimonial')?.addEventListener('click', () => {
-    clearInterval(slideInterval);
-    prevSlide();
-    startSlideshow();
-  });
-
-  // Set up indicator clicks
-  indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-      clearInterval(slideInterval);
-      showSlide(index);
-      startSlideshow();
-    });
-  });
-
-  // Function to start the automatic slideshow
-  function startSlideshow() {
-    slideInterval = setInterval(nextSlide, 7000); // Change slide every 5 seconds
-  }
-
-  // Initialize the slideshow
-  function initSlideshow() {
-    showSlide(0);
-    startSlideshow();
-
-    // Pause slideshow when user hovers over it
-    const slideshowContainer = document.querySelector('.testimonial-slideshow');
-    slideshowContainer?.addEventListener('mouseenter', () => {
-      clearInterval(slideInterval);
-    });
-    
-    slideshowContainer?.addEventListener('mouseleave', () => {
-      startSlideshow();
-    });
-  }
-
-  // Initialize when the DOM is loaded
-  document.addEventListener('DOMContentLoaded', initSlideshow);
-
-  // Clean up on page unload
-  window.addEventListener('beforeunload', () => {
-    clearInterval(slideInterval);
-  });
-</script>
-
 <style>
-  .testimonial-slide {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  .testimonial-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
-  .testimonial-slide.opacity-100 {
-    transform: translateX(0);
-  }
-  
-  .testimonial-slide.opacity-0 {
-    transform: translateX(20px);
+  .testimonial-card:hover {
+    transform: translateY(-5px);
   }
 </style>
-

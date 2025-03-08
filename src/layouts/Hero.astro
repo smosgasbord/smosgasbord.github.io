@@ -8,18 +8,12 @@ var services = data.services;
 <div class="rounded-md hero min-h-screen z-10 ">
 
   <div class="hero-content m-6 lg:m-10 ">
-  <mainTitle class="title-font text-5xl lg:text-7xl" data-scroll data-scroll-speed="-0.2">Let's transform your visions into digital reality</mainTitle>
+  <mainTitle class="z-0 title-font text-5xl lg:text-7xl" data-scroll data-scroll-speed="-0.1">Let's transform your visions into digital reality</mainTitle>
   </div>
 </div>
 <div id="categories" class="m-10 -translate-y-10 text-white text-4xl"></div>
 <section id="services" class="m-5 bg-base-200 p-7 rounded-box pb-7">
 <div class="uppercase text-3xl lg:text-5xl   text-right title-font">Services</div>
-<!--ul class="ml-5">
-{services.map((service) => 
-<li class="list-disc	uppercase hover:text-primary-focus text-3xl lg:text-5xl ">{service.tituloServicio}</li>
-)}
-</ul-->
-
 
 {services.map((service) => 
 <div tabindex="0" class="collapse collapse-arrow bg-base-200 text-neutral rounded-box focus:bg-secondary focus:text-secondary-content  ">
@@ -43,7 +37,7 @@ var services = data.services;
 <script is:inline>
   document.addEventListener("DOMContentLoaded", function () {
     new TypeIt("#categories", {
-      strings: ["Your mission: create positive change. My mission: provide the digital tools to amplify it."," I develop custom web, AI, and automation solutions for organizations making a difference."],speed:20
+      strings: ["Your mission: create positive change. My mission: provide the digital tools to amplify it."],speed:20
     }).go();
   });
 </script>
