@@ -27,7 +27,7 @@ import Testimonials from '../components/Testimonials.astro'
         detectAudio: false,
       });
      src(o0).scale(1.1).layer(osc(10, 0.1, 0.5).blend(osc(10,0.1,0).color(2)).mask(shape(3,0.1,0.7)).rotate()
-        .color(0.85,1.00,0.10).saturate(4).modulate(o0,0.053)
+        .color(0.85,() => mouse.x / 600,() => mouse.y/ 2000).saturate(4).modulate(o0,0.053)
         .modulate(noise(2, 0.07), () => mouse.x / 600).scale(1).blend(o0,0.8).blend(o0,0.4)
         .blend(o0,0.2).modulate(o0,0.04)).out();
     </script>
