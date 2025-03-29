@@ -6,15 +6,15 @@ import AccordionItem from '../components/AccordionItem.astro';
 <Layout title="Taller de Formación - Inscríbete Ahora">
   <header class="container mx-auto p-4 flex flex-col md:flex-row justify-between items-center">
     <div class="flex items-center gap-4">
-      <img src="/logo.png" alt="Logo del Taller" class="h-12" />
-      <p class="text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-1"></i>Madrid, España</p>
+      <img src="/logo.png" alt="smosgasbord.xyz" class="h-12" />
+      <p class="text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-1"></i>San José, Costa Rica</p>
     </div>
     <div class="flex flex-col md:flex-row gap-4 mt-4 md:mt-0">
       <a href="mailto:info@taller.com" class="text-sm text-gray-600 hover:text-blue-600">
-        <i class="fas fa-envelope mr-1"></i>info@taller.com
+        <i class="fas fa-envelope mr-1"></i>ran@smosgasbord.xyz
       </a>
       <a href="tel:+34600000000" class="text-sm text-gray-600 hover:text-blue-600">
-        <i class="fas fa-phone mr-1"></i>+34 600 000 000
+        <i class="fas fa-phone mr-1"></i>+506 85109841
       </a>
     </div>
   </header>
@@ -22,11 +22,12 @@ import AccordionItem from '../components/AccordionItem.astro';
   <main class="container mx-auto p-4 my-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="flex flex-col">
-        <h1 class="text-3xl md:text-4xl font-bold mb-6">¡Inscríbete a Nuestro Taller de IA Ahora!</h1>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">¡Inscríbete a Nuestro Taller de IA!</h1>
         <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
           <div id="tally-form" class="min-h-[400px]">
-            <!-- Aquí se cargará el formulario de Tally -->
-            <p class="text-center text-gray-500 mb-4">Cargando formulario...</p>
+            
+            <iframe data-tally-src="https://tally.so/embed/mOEY1M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="717" frameborder="0" marginheight="0" marginwidth="0" title="Taller IA para Educadores"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
             <div class="animate-pulse flex flex-col space-y-4">
               <div class="h-4 bg-gray-200 rounded w-3/4"></div>
               <div class="h-10 bg-gray-200 rounded"></div>
@@ -146,16 +147,6 @@ import AccordionItem from '../components/AccordionItem.astro';
   </footer>
 
   <script>
-    // Cargar el formulario de Tally
-    document.addEventListener('DOMContentLoaded', function() {
-      const script = document.createElement('script');
-      script.src = 'https://tally.so/widgets/embed.js';
-      script.onload = function() {
-        // Reemplaza 'YOUR_TALLY_FORM_ID' con el ID de tu formulario
-        Tally.loadEmbeds();
-      };
-      document.body.appendChild(script);
-    });
   </script>
 </Layout>
 
