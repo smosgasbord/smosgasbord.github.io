@@ -1,0 +1,67 @@
+---
+interface Props {
+  question: string;
+  answer: string;
+  id: string;
+}
+
+const { question, answer, id } = Astro.props;
+---
+
+<div class="border-b">
+  <button 
+    id={`accordion-button-${id}`}
+    class="flex w-full justify-between items-center py-4 font-medium text-left hover:text-blue-600 focus:outline-none"
+    aria-expanded="false"
+    aria-controls={`accordion-content-${id}`}
+  >
+    {question}
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+      class="h-4 w-4 shrink-0 transition-transform duration-200"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+  <div 
+    id={`accordion-content-${id}`}
+    class="overflow-hidden max-h-0 transition-all duration-200"
+    aria-labelledby={`accordion-button-${id}`}
+    hidden
+  >
+    <div class="pb-4 pt-0 text-sm">{answer}</div>
+  </div>
+</div>
+
+<script define:vars={{ id }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById(`accordion-button-${id}`);
+    const content = document.getElementById(`accordion-content-${id}`);
+    
+    if (button && content) {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        
+        if (expanded) {
+          content.style.maxHeight = '0';
+          content.setAttribute('hidden', '');
+          button.querySelector('svg').classList.remove('rotate-180');
+        } else {
+          content.removeAttribute('hidden');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          button.querySelector('svg').classList.add('rotate-180');
+        }
+      });
+    }
+  });
+</script>
+
