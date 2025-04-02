@@ -1,0 +1,50 @@
+---
+import data from '../content/funnelsData.json';
+const faqs = data.faq;
+---
+
+<div class="w-full">
+  <h3 class="text-2xl font-bold mb-6 text-primary">Preguntas Frecuentes</h3>
+  <div class="space-y-4">
+    {faqs.map((faq, index) => (
+      <div class="border border-gray-200 rounded-lg">
+        <button
+          class="w-full flex justify-between items-center p-4 focus:outline-none"
+          onclick={`toggleFaq(${index})`}
+        >
+          <span class="text-xl font-medium">{faq.question}</span>
+          <svg
+            class="w-6 h-6 transform transition-transform duration-200"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            id={`faqIcon${index}`}
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div class="hidden p-4 border-t border-gray-200" id={`faqContent${index}`}>
+          <p class="text-gray-600">{faq.answer}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  function toggleFaq(index: number) {
+    const content = document.getElementById(`faqContent${index}`);
+    const icon = document.getElementById(`faqIcon${index}`);
+    
+    content?.classList.toggle('hidden');
+    icon?.classList.toggle('rotate-180');
+  }
+  
+  // Add the function to the window object to make it accessible from HTML
+  window.toggleFaq = toggleFaq;
+</script>
