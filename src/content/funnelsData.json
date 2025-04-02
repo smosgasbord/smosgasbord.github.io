@@ -30,18 +30,34 @@
         }
       ],
       "faq": [
-        {
-          "question": "¿Necesito conocimientos técnicos previos?",
-          "answer": "No, el webinar está diseñado para todos los niveles. Nos enfocamos en conceptos prácticos y aplicables."
-        },
-        {
-          "question": "¿Recibiré una grabación del webinar?",
-          "answer": "Sí, todos los participantes registrados recibirán acceso a la grabación y materiales complementarios."
-        },
-        {
-          "question": "¿Qué necesito para participar?",
-          "answer": "Una computadora con conexión a internet estable y ganas de transformar tu negocio."
-        }
+   {
+     "question": "¿Necesito conocimientos técnicos previos?",
+     "answer": "No, el webinar está diseñado para todos los niveles. Explicaremos los conceptos tecnológicos en términos sencillos y prácticos, enfocándonos en aplicaciones reales para tu negocio."
+   },
+   {
+     "question": "¿Este webinar es realmente gratuito o tiene algún costo oculto?",
+     "answer": "El webinar es completamente gratuito. Al final compartiremos información sobre nuestros servicios para quienes deseen profundizar, pero sin compromiso ni presión."
+   },
+   {
+     "question": "¿Recibiré algún material después del webinar?",
+     "answer": "Sí, todos los participantes recibirán una guía práctica con los conceptos clave y herramientas recomendadas, además de la grabación del webinar para revisar cuando lo necesites."
+   },
+   {
+     "question": "¿Qué tipo de automatizaciones podré implementar después del webinar?",
+     "answer": "Aprenderás a identificar y comenzar a implementar automatizaciones para gestión de clientes, generación de reportes, seguimiento de impacto social/ambiental y comunicaciones, entre otras áreas según tu sector específico."
+   },
+   {
+     "question": "¿El enfoque del webinar es aplicable a mi cooperativa/PYME aunque sea pequeña?",
+     "answer": "Absolutamente. Presentaremos soluciones escalables que funcionan para organizaciones de todos los tamaños, con ejemplos específicos para entidades que operan con recursos limitados."
+   },
+   {
+     "question": "¿Cómo puedo estar seguro/a de que estas automatizaciones respetarán nuestros valores?",
+     "answer": "Dedicaremos una sección específica a mostrar cómo implementar tecnología alineada con valores sociales y ambientales. Nuestro enfoque se centra en automatizaciones éticas que potencian, no comprometen, tu propósito."
+   },
+   {
+     "question": "Si no puedo asistir en vivo, ¿podré acceder al contenido después?",
+     "answer": "Sí, enviaremos la grabación a todos los inscritos. Sin embargo, recomendamos participar en vivo para aprovechar la sesión de preguntas y respuestas personalizada y los ejercicios prácticos."
+   }
       ],
       "webinarDetails": {
         "title": "Detalles del Webinar",
