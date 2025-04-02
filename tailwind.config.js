@@ -3,15 +3,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: '#2d4654',
-        sage: '#5e8b7e',
-        turquoise: '#7fd1c7',
-        cream: '#f5f5f0',
-      },
-      fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-      },
+        primary: '#3E6B61',
+        secondary: '#7FD1C0',
+        dark: '#2C4A42'
+      }
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui')]
 };

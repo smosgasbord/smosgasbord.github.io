@@ -1,1 +1,87 @@
-{}
+{
+  "funnels": [
+    {
+      "header": {
+        "logo": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/ico.png?v=1694048980703",
+        "email": "ran@smosgasbord.xyz",
+        "phone": "+506 85109841"
+      },
+      "hero": {
+        "title": "Del Caos a la Claridad",
+        "subtitle": "Automatización para Emprendimientos que Cambian el Mundo",
+        "formLink": "https://tally.so/r/3NPPLB?alignLeft=0&hideTitle=0&transparentBackground=1&dynamicHeight=1",
+        "heroImage": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/7.png?v=1743568839090"
+      },
+      "testimonials": [
+        {
+          "name": "Ryan Hanna",
+          "role": "Co Fundador de Good Judy",
+          "text": "Ran creó un sistema automatizado de mapeo de clientes clave que transformó nuestras operaciones, ahorrando miles de dólares en tiempo y recursos. Su conocimiento técnico permitió un proceso fluido que superó nuestras expectativas y generó insights valiosos con impacto inmediato en el negocio."
+        },
+        {
+          "name": "Jean Pullen",
+          "role": "CEO de Regenerate Your Reality",
+          "text": "Durante tres años, Ran ha automatizado sistemáticamente mis procesos de TI y mejorado mi sitio web con soluciones eficientes. Su paciencia y habilidad técnica excepcional han resuelto consistentemente desafíos operativos, elevando la calidad de mis servicios tanto en línea como presencialmente"
+        },
+        {
+          "name": "Roshan Chhotu",
+          "role": "Co Fundador de 5 Ways To Innovate",
+          "text": "Ran se enfocó en resolver nuestros problemas reales más allá del encargo inicial. Su enfoque transparente y comunicación constante aseguraron un desarrollo alineado perfectamente con nuestras necesidades."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Necesito conocimientos técnicos previos?",
+          "answer": "No, el webinar está diseñado para todos los niveles. Nos enfocamos en conceptos prácticos y aplicables."
+        },
+        {
+          "question": "¿Recibiré una grabación del webinar?",
+          "answer": "Sí, todos los participantes registrados recibirán acceso a la grabación y materiales complementarios."
+        },
+        {
+          "question": "¿Qué necesito para participar?",
+          "answer": "Una computadora con conexión a internet estable y ganas de transformar tu negocio."
+        }
+      ],
+      "webinarDetails": {
+        "title": "Detalles del Webinar",
+        "workshop": [
+          {
+            "title": "Introducción y Diagnóstico Rápido",
+            "duration": "15 min"
+          },
+          {
+            "title": "Marcos de Trabajo",
+            "duration": "20 min"
+          },
+          {
+            "title": "Laboratorio Práctico",
+            "duration": "30 min"
+          },
+          {
+            "title": "Caso de Estudio Detallado",
+            "duration": "15 min"
+          },
+          {
+            "title": "Sesión Colaborativa",
+            "duration": "10 min"
+          }
+        ],
+        "materials": [
+          {
+            "title": "Kit de Inicio de Automatización Consciente",
+            "description": "Plantillas, listas de verificación y recursos"
+          },
+          {
+            "title": "Calculadora de Impacto",
+            "description": "Herramienta para estimar ahorros potenciales"
+          },
+          {
+            "title": "Directorio de Proveedores Éticos",
+            "description": "Selección curada de servicios tecnológicos"
+          }
+        ]
+      }
+    }
+  ]
+}

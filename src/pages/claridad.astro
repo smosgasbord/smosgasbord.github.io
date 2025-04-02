@@ -1,231 +1,92 @@
 ---
 import WebinarLayout from '../layouts/WebinarLayout.astro';
+import Header from '../components/Header.astro';
+import FAQ from '../components/FAQ.astro';
+import Testimonial from '../components/Testimonial.astro';
+import data from '../content/funnelsData.json';
+
+const funnel = data.funnels[0]; // Get the first funnel
+const { hero, webinarDetails } = funnel;
 ---
 
 <WebinarLayout title="Del Caos a la Claridad: Automatización para Empresas">
-   <header class="container mx-auto px-4 py-6 flex justify-between items-center">
-    <div class="flex items-center gap-6">
-      <img src="/logo.svg" alt="Logo" class="h-10" />
-      <span class="text-sm text-navy hidden sm:inline-block">
-        <i class="fa-solid fa-location-dot mr-1"></i>
-        Online
-      </span>
-    </div>
-    <div class="flex flex-col sm:flex-row gap-4 items-end sm:items-center">
-      <a href="mailto:ran@smosgasbord.xyz" class="text-sm text-navy flex items-center">
-        <i class="fa-solid fa-envelope mr-1"></i>
-        ran@smosgasbord.xyz
-      </a>
-      <a href="tel:+123456789" class="text-sm text-navy flex items-center">
-        <i class="fa-solid fa-phone mr-1"></i>
-        Contacto
-      </a>
-    </div>
-  </header>
-
+   <Header />
+  
   <main class="container mx-auto px-4 py-8">
-    <!-- Hero Section -->
-    <div class="relative radial-lines mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold text-navy mb-6 leading-tight uppercase text-center">
-        Del Caos a la Claridad
-      </h1>
-      
-      <div class="bg-sage p-6 mb-6 max-w-3xl mx-auto">
-        <h2 class="text-2xl font-bold text-cream uppercase leading-tight text-center">
-          Automatización para Empresas<br />
-          que Cambian el Mundo
-        </h2>
-      </div>
-      
-      <div class="bg-turquoise p-6 mb-8 max-w-2xl mx-auto text-center">
-        <p class="text-xl font-medium text-navy uppercase">16.04.2025</p>
-        <p class="text-lg text-navy">6 PM - 8 PM</p>
-        <p class="text-navy mt-4 uppercase font-medium">
-          Dirigido a PYMES, Cooperativas y Proyectos Sociales
-        </p>
-      </div>
-    </div>
-    
-    <!-- Form and Image Section - Two Columns -->
-    <div class="grid md:grid-cols-2 gap-8 mb-16 items-center">
-      <!-- Left Column: Form -->
-    
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-xl font-semibold mb-4 text-navy">Reserva tu espacio hoy</h2>
-            <p class="text-sm text-navy mb-4">Cupo limitado a 25 participantes para garantizar atención personalizada.</p>
-            <!-- Tally Form Embed -->
-            <div class="tally-embed mb-6">
-              <iframe data-tally-src="https://tally.so/embed/3NPPLB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1768" frameborder="0" marginheight="0" marginwidth="0" title="Registro Webinar: Automatización para Empresas "></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-            </div>
-        
-        <!-- Payment Logos -->
-        <div class="flex justify-center gap-6 mt-4">
-          <img src="/placeholder.svg?height=30&width=60" alt="Método de pago 1" class="h-8 opacity-70" />
-          <img src="/placeholder.svg?height=30&width=60" alt="Método de pago 2" class="h-8 opacity-70" />
-          <img src="/placeholder.svg?height=30&width=60" alt="Método de pago 3" class="h-8 opacity-70" />
-        </div>
-      </div>
-      
-      <!-- Right Column: Image -->
-      <div class="rounded-lg overflow-hidden shadow-lg h-full flex items-center">
-        <img 
-          src="/placeholder.svg?height=600&width=800" 
-          alt="Automatización para empresas" 
-          class="w-full h-auto"
-        />
-      </div>
-    </div>
-    
-    <!-- Webinar Details -->
-    <div class="bg-cream border border-sage p-6 rounded-lg mb-16 max-w-3xl mx-auto">
-      <h3 class="text-lg font-semibold mb-3 text-navy">Detalles del Webinar</h3>
-      <ul class="space-y-2">
-        <li class="flex items-start gap-2">
-          <i class="fa-regular fa-clock text-sage mt-1"></i>
-          <span><strong>Duración:</strong> 90 minutos en formato taller práctico</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <i class="fa-solid fa-check text-sage mt-1"></i>
-          <span><strong>Formato:</strong> Webinar interactivo con ejercicios prácticos</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <i class="fa-solid fa-tag text-sage mt-1"></i>
-          <span><strong>Precio:</strong> GRATUITO</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <i class="fa-solid fa-users text-sage mt-1"></i>
-          <span><strong>Ideal para:</strong> Emprendedores sociales, cooperativas y PYMES en transición digital</span>
-        </li>
-      </ul>
-    </div>
-    
-    <!-- Testimonials and FAQs - Two Columns -->
-    <div class="grid md:grid-cols-2 gap-12">
-      <!-- Left Column: Testimonials -->
-      <div class="space-y-6">
-        <h3 class="text-xl font-semibold text-navy">Lo que dicen nuestros participantes</h3>
-        
-        <div class="bg-cream p-5 rounded-lg shadow border border-sage">
-          <div class="flex items-center mb-3">
-            <img src="/placeholder.svg?height=50&width=50" alt="Testimonio 1" class="w-10 h-10 rounded-full mr-3" />
-            <div>
-              <p class="font-medium text-navy">María González</p>
-              <p class="text-sm text-navy opacity-80">Fundadora, EcoVida</p>
-            </div>
-          </div>
-          <p class="text-navy">"Este taller transformó completamente nuestra forma de trabajar. Ahorramos más de 15 horas semanales y ahora podemos dedicar ese tiempo a nuestra misión social."</p>
-        </div>
-        
-        <div class="bg-cream p-5 rounded-lg shadow border border-sage">
-          <div class="flex items-center mb-3">
-            <img src="/placeholder.svg?height=50&width=50" alt="Testimonio 2" class="w-10 h-10 rounded-full mr-3" />
-            <div>
-              <p class="font-medium text-navy">Carlos Rodríguez</p>
-              <p class="text-sm text-navy opacity-80">Director, Cooperativa Sustentable</p>
-            </div>
-          </div>
-          <p class="text-navy">"Las herramientas que aprendimos nos permitieron automatizar procesos que antes tomaban días. La inversión de tiempo en el webinar valió cada minuto."</p>
-        </div>
-        
-        <div class="bg-cream p-5 rounded-lg shadow border border-sage">
-          <div class="flex items-center mb-3">
-            <img src="/placeholder.svg?height=50&width=50" alt="Testimonio 3" class="w-10 h-10 rounded-full mr-3" />
-            <div>
-              <p class="font-medium text-navy">Laura Martínez</p>
-              <p class="text-sm text-navy opacity-80">CEO, ImpactoPositivo</p>
-            </div>
-          </div>
-          <p class="text-navy">"Ran tiene un don para simplificar lo complejo. Implementamos tres automatizaciones clave que han reducido nuestros costos operativos en un 30%."</p>
-        </div>
-      </div>
-      
-      <!-- Right Column: FAQs -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4 text-navy uppercase">Preguntas Frecuentes</h3>
-        
-        <div class="space-y-3">
-          <div class="border border-sage rounded-lg">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer p-4 text-navy">
-                <span>¿Necesito conocimientos técnicos previos?</span>
-                <span class="transition group-open:rotate-180">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="p-4 pt-0 text-navy">
-                No, el taller está diseñado para todos los niveles. Explicamos los conceptos desde cero y nos enfocamos en soluciones prácticas que cualquiera puede implementar.
-              </div>
-            </details>
-          </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Left Column -->
+      <div class="space-y-8">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+            {hero.title}
+          </h1>
+          <h2 class="text-2xl md:text-3xl text-dark mb-6">
+            {hero.subtitle}
+          </h2>
           
-          <div class="border border-sage rounded-lg">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer p-4 text-navy">
-                <span>¿Recibiré materiales después del webinar?</span>
-                <span class="transition group-open:rotate-180">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="p-4 pt-0 text-navy">
-                Sí, todos los participantes recibirán el Kit de Inicio de Automatización Consciente con plantillas, listas de verificación y recursos adicionales.
-              </div>
-            </details>
+          <div class="bg-white rounded-lg shadow-xl">
+            <div class="p-6">
+              <iframe data-tally-src={hero.formLink} width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Registro Webinar" class="rounded-lg"></iframe>
+            </div>
           </div>
-          
-          <div class="border border-sage rounded-lg">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer p-4 text-navy">
-                <span>¿Habrá oportunidad de hacer preguntas específicas?</span>
-                <span class="transition group-open:rotate-180">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="p-4 pt-0 text-navy">
-                Absolutamente. Dedicamos 10 minutos al final del taller para una sesión colaborativa donde responderemos preguntas específicas sobre tu negocio.
-              </div>
-            </details>
-          </div>
-          
-          <div class="border border-sage rounded-lg">
-            <details class="group">
-              <summary class="flex justify-between items-center font-medium cursor-pointer p-4 text-navy">
-                <span>¿Qué sucede si no puedo asistir en vivo?</span>
-                <span class="transition group-open:rotate-180">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="p-4 pt-0 text-navy">
-                Enviaremos una grabación a todos los inscritos, pero recomendamos asistir en vivo para aprovechar la interacción y los ejercicios prácticos.
-              </div>
-            </details>
+
+          <div class="mt-8 flex justify-center space-x-4">
+            <img src="/payment1.png" alt="Método de pago 1" class="h-8" />
+            <img src="/payment2.png" alt="Método de pago 2" class="h-8" />
           </div>
         </div>
       </div>
+
+      <!-- Right Column -->
+      <div class="space-y-8">
+        <div class="rounded-lg overflow-hidden">
+          <img 
+            src={hero.heroImage}
+            alt="Automatización" 
+            class="w-full rounded-lg"
+          />
+        </div>
+
+        <Testimonial />
+        
+        <FAQ />
+      </div>
     </div>
+
+    <!-- Detalles del Webinar -->
+    <section class="bg-white rounded-lg shadow-xl mt-16">
+      <div class="p-1">
+        <h3 class="text-2xl font-bold text-primary mb-6">{webinarDetails.title}</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="font-semibold mb-2">Estructura del Taller:</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              {webinarDetails.workshop.map((item) => (
+                <li>{item.title} ({item.duration})</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Materiales Exclusivos:</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              {webinarDetails.materials.map((item) => (
+                <li>{item.title}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="bg-sage py-8 mt-12 text-cream">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <img src="/logo.svg" alt="Logo" class="h-8 mb-2 invert" />
-          <p class="text-sm">Automatización consciente para empresas con propósito</p>
-        </div>
-        <div class="flex flex-col items-center md:items-end">
-          <p class="uppercase font-bold mb-2">Registro:</p>
-          <a href="https://smosgabord.xyz/claridad" class="text-turquoise font-medium mb-2">smosgabord.xyz/claridad</a>
-          <a href="mailto:ran@smosgasbord.xyz" class="text-sm">
-            <i class="fa-solid fa-envelope mr-1"></i>
-            ran@smosgasbord.xyz
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-          
-          
-            
+  <script is:inline>
+    window.addEventListener('load', function() {
+      if (typeof Tally !== 'undefined') {
+        Tally.loadEmbeds();
+      }
+    });
+  </script>
+       
            
 </WebinarLayout>
 
