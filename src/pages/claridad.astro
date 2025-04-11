@@ -70,7 +70,8 @@ const { hero, webinarDetails } = funnel;
             <h4 class="font-semibold mb-2">Materiales Exclusivos:</h4>
             <ul class="list-disc list-inside space-y-2 text-gray-700">
               {webinarDetails.materials.map((item) => (
-                <li>{item.title}</li>
+                <li><strong>{item.title}</strong><br>
+{item.description}</li>
               ))}
             </ul>
           </div>
