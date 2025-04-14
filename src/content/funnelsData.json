@@ -31,12 +31,16 @@
       ],
       "faq": [
         {
+            "question": "¿Qué día es el webinar?",
+            "answer": "30 de Abril 2025 de 6pm a 8pm - Hora Costa Rica"
+          },
+        {
           "question": "¿Puedo participar aunque no tenga conocimientos técnicos previos?",
           "answer": "Sí, el webinar está diseñado para todos los niveles. Explicaremos los conceptos tecnológicos en términos sencillos y prácticos, enfocándonos en aplicaciones reales para tu negocio."
         },
         {
           "question": "¿Este webinar tiene un costo?",
-          "answer": "El webinar cuesta 19 usd. Al final compartiremos información sobre nuestros servicios para quienes deseen profundizar, pero sin compromiso ni presión."
+          "answer": "El webinar cuesta 19 USD. Al final compartiremos información sobre nuestros servicios para quienes deseen profundizar, pero sin compromiso ni presión."
         },
         {
           "question": "¿Recibiré algún material después del webinar?",
@@ -62,10 +66,7 @@
       "webinarDetails": {
         "title": "Detalles del Webinar",
         "workshop": [
-          {
-            "title": "30 de Abril 2025",
-            "duration": "6pm a 8pm - Hora Costa Rica"
-          },
+        
           {
             "title": "Introducción y Diagnóstico Rápido",
             "duration": "15 min"
