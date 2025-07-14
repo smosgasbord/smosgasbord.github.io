@@ -8,7 +8,7 @@
       },
       "hero": {
         "title": "Del Caos a la Claridad",
-        "subtitle": "Automatización para Emprendimientos que Cambian el Mundo",
+        "subtitle": "IA y Automatización para Orgaciones de Impacto",
         "formLink": "https://tally.so/r/3NPPLB?alignLeft=0&hideTitle=0&transparentBackground=1&dynamicHeight=1",
         "heroImage": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/4.png?v=1744652495451"
       },
@@ -32,7 +32,7 @@
       "faq": [
         {
             "question": "¿Qué día es el webinar?",
-            "answer": "30 de Abril 2025 de 6pm a 8pm - Hora Costa Rica"
+            "answer": "24 Julio 2025 de 6:30pm a 8:30pm - Hora Costa Rica"
           },
         {
           "question": "¿Puedo participar aunque no tenga conocimientos técnicos previos?",
@@ -40,11 +40,11 @@
         },
         {
           "question": "¿Este webinar tiene un costo?",
-          "answer": "El webinar cuesta 19 USD. Al final compartiremos información sobre nuestros servicios para quienes deseen profundizar, pero sin compromiso ni presión."
+          "answer": "El webinar cuesta 37 USD. Al final compartiremos información sobre nuestros servicios para quienes deseen profundizar, pero sin compromiso ni presión."
         },
         {
           "question": "¿Recibiré algún material después del webinar?",
-          "answer": "Sí, todos los participantes recibirán una guía práctica con los conceptos clave y herramientas recomendadas, además de la grabación del webinar para revisar cuando lo necesites."
+          "answer": "Sí, todos los participantes recibirán una guía práctica con los conceptos clave y herramientas recomendadas."
         },
         {
           "question": "¿Qué tipo de automatizaciones podré implementar después del webinar?",
@@ -90,20 +90,12 @@
         ],
         "materials": [
           {
-            "title": "Sesión de consultoría personalizada de 20 minutos",
+            "title": "Sesión de consultoría personalizada de 30 minutos",
             "description": "Espacio para ayudarte en tu proyecto."
           },
           {
-            "title": "Kit de Inicio de Automatización Consciente",
-            "description": "Plantillas, listas de verificación y recursos"
-          },
-          {
-            "title": "Calculadora de Impacto",
-            "description": "Herramienta para estimar ahorros potenciales"
-          },
-          {
-            "title": "Directorio de Proveedores Éticos",
-            "description": "Selección curada de servicios tecnológicos"
+            "title": "Guía para Integrar IA ética y sostenible",
+            "description": "Selección curada de servicios tecnológicos y herramientas seguras y éticas"
           }
         ]
       }
